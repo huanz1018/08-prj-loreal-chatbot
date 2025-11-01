@@ -19,6 +19,8 @@
     <div class="page-wrapper">
       <!------- Header / Branding ------->
       <header class="site-header">
+        <!-- L'Oréal brand logo (provided) -->
+        <img src="img/loreal-logo.png" alt="L'Oréal logo" class="brand-logo" />
         <h1 class="site-title">Smart Product Advisor</h1>
       </header>
 
@@ -28,6 +30,13 @@
           <div id="chatWindow" class="chat-window">
             <!-- messages will be appended here via JS -->
           </div>
+
+          <!-- Latest user question displayed above the assistant response -->
+          <div
+            id="latestQuestion"
+            class="latest-question"
+            aria-live="polite"
+          ></div>
 
           <form id="chatForm" class="chat-form">
             <label for="userInput" class="visually-hidden">Message</label>
